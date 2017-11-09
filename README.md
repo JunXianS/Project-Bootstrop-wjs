@@ -10,80 +10,58 @@ javascript组件
 
 固定浮动导航：Affix
 
-@media screen and (max-width: 768px){
-  .wjs_nav .navbar-collapse{
-    position:absolute;  
-    width:100%;
-    background: #fff;
-  }
-}
+	@media screen and (max-width: 768px){
+  	.wjs_nav .navbar-collapse{
+  	  position:absolute;  
+  	  width:100%;
+  	  background: #fff;
+  	}
+	}
 
 ajax异步 动态请求后台轮播图数据。
 
-function banner() {
-
-    var getData=function(callback){
-        $.ajax({
-           url:'json/index.json',
-           data:{},
-           type:'get',
-           dataType:'json',
-           success:function(data){
-                callback && callback(data);
-                console.log(data);
-            }
-        });
-    }
-
+	function banner() {
+    		var getData=function(callback){
+       		$.ajax({
+          	 url:'json/index.json',
+          	 data:{},
+           	type:'get',
+          	 dataType:'json',
+          	 success:function(data){
+                	callback && callback(data);
+            	}
+        	});
+    	}
 移动端手势滑动：
 
-var startX=0；
-
-var moveX=0；
-
-var distanceX=0；
-
-var isMove=false；
-
-$(‘.wjs_banner’).on( ‘ touchstart’ ,  function (e) { //刚刚触摸到的触摸点
-
-	startX = e.originalEvent.touches[0].clientX;
-});
-
-$(‘.wjs_banner’).on( ‘ touchmove’ ,  function (e) {
-
-	moveX = e.originalEvent.touches[0].clientX;
-        
-	distanceX= moveX- startX;  
-        
-isMove=true;
-
-});
-
-$(‘.wjs_banner’).on( ‘ touchend’ ,  function (e) { 
-
-	if（Math.abs( distancex) > 50 && isMove) {
-	
-	if ( distanceX  < 0）{
-	//向左滑动  下一张
-	$('.carousel').carousel(“next”);
-}else{
-        //向右滑动  上一张
-	
-	$('.carousel').carousel(“prev”)
-}
-}
-
-//重置
-startX=0；
-
-moveX=0；
-
-distanceX=0；
-
-isMove=false；
-
-});
+	var startX=0；
+	var moveX=0；
+	var distanceX=0；
+	var isMove=false；
+	$(‘.wjs_banner’).on( ‘ touchstart’ ,  function (e) { 
+		startX = e.originalEvent.touches[0].clientX;
+	});
+	$(‘.wjs_banner’).on( ‘ touchmove’ ,  function (e) {
+		moveX = e.originalEvent.touches[0].clientX;
+		distanceX= moveX- startX;  
+		isMove=true;
+	});
+	$(‘.wjs_banner’).on( ‘ touchend’ ,  function (e) { 
+		if（Math.abs( distancex) > 50 && isMove) {
+		if ( distanceX  < 0）{
+			//向左滑动  下一张
+			$('.carousel').carousel(“next”);
+		}else{
+       	 		//向右滑动  上一张
+			$('.carousel').carousel(“prev”)
+		}
+	}
+	//重置
+	startX=0；
+	moveX=0；
+	distanceX=0；
+	isMove=false；
+	});
 
 页签移动端响应和滑动
 
