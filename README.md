@@ -1,12 +1,9 @@
 ### Project-Bootstrop-wjs
-基于Bootstrop响应式开发的项目， 适配多种终端。</br>
+
 包含的Bootstrop相关内容：</br>
 响应式开发</br>
-
 栅格系统</br>
-
 javascript组件</br>
-
 固定浮动导航：Affix</br>
 
 	@media screen and (max-width: 768px){
