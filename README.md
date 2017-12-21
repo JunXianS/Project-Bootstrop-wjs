@@ -1,14 +1,13 @@
-# Project-Bootstrop-wjs
-基于Bootstrop响应式开发的项目， 适配多种终端。
+### Project-Bootstrop-wjs
+基于Bootstrop响应式开发的项目， 适配多种终端。</br>
+包含的Bootstrop相关内容：</br>
+响应式开发</br>
 
-包含的Bootstrop相关内容：
-响应式开发
+栅格系统</br>
 
-栅格系统
+javascript组件</br>
 
-javascript组件
-
-固定浮动导航：Affix
+固定浮动导航：Affix</br>
 
 	@media screen and (max-width: 768px){
   	.wjs_nav .navbar-collapse{
@@ -18,7 +17,7 @@ javascript组件
   	}
 	}
 
-ajax异步 动态请求后台轮播图数据。
+ajax异步 动态请求后台轮播图数据。</br>
 
 	function banner() {
     		var getData=function(callback){
@@ -32,7 +31,7 @@ ajax异步 动态请求后台轮播图数据。
             	}
         	});
     	}
-移动端手势滑动：
+移动端手势滑动：</br>
 
 	var startX=0；
 	var moveX=0；
@@ -63,16 +62,11 @@ ajax异步 动态请求后台轮播图数据。
 	isMove=false；
 	});
 
-优化的问题：数据缓存原理
-
-页签移动端响应和滑动
-
-产品盒子响应式
-
-bootstrop定制
-
-字体图标
-
+优化的问题：数据缓存原理</br>
+页签移动端响应和滑动</br>
+产品盒子响应式</br>
+bootstrop定制</br>
+字体图标</br>
 等等。。
 
 
