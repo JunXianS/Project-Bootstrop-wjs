@@ -1,4 +1,6 @@
 ### Project-Bootstrop-wjs
+切换iphone+pc+ipad预览：
+[Bootstrop项目预览]( https://amyidol.github.io/Project-Bootstrop-wjs/index.html)</br>
 包含的Bootstrop相关内容：</br>
 
 1，响应式,</br>
